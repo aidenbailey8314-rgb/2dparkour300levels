@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skyline Sprint</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="game-shell">
+      <canvas id="gameCanvas" width="960" height="540" aria-label="Parkour game canvas"></canvas>
+
+      <div class="hud">
+        <div class="hud-group left">
+          <span id="hud-level">Level 1 / 300</span>
+          <span id="hud-time">00:00.0</span>
+        </div>
+        <div class="hud-group right">
+          <span id="hud-deaths">Deaths 0</span>
+          <span id="hud-best">Best --</span>
+        </div>
+      </div>
+
+      <div id="message-banner" class="message-banner hidden">READY</div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
